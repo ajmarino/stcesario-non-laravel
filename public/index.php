@@ -1,4 +1,6 @@
 <?php
+    date_default_timezone_set('America/New_York');
+
     require './helpers.php';
     require '../config/stcesario.php';
 
@@ -13,14 +15,14 @@
 
 
     $components = [
-        // "_jumbotron.php",
-        // "_about-us.php",
-        // "parallax/_block-1.php",
-        // "_our-history.php",
-        // "parallax/_block-2.php",
-        // "_media.php",
-        // "parallax/_block-3.php",
-        // "_contact.php"
+        "jumbotron.php",
+        "about-us.php",
+        "parallax/block-1.php",
+        "our-history.php",
+        "parallax/block-2.php",
+        "media.php",
+        "parallax/block-3.php",
+        "contact.php"
     ];
 
 
@@ -43,19 +45,21 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
+
         <div id="site">
-            <?php require_once $settings->componentPath('global/header.php'); ?>
+            <?php $settings->componentPath('global/header.php'); ?>
 
             <main role="main">
                 
                 <?php foreach ($components as $template) {
-                    include_once $settings->componentPath("components/{$template}");
+                    $settings->componentPath("components/{$template}");
                 } ?>
 
             </main>
 
-            <?php require_once $settings->componentPath('global/footer.php'); ?>
+            <?php $settings->componentPath('global/footer.php'); ?>
         </div>
+
 
         <script src="js/plugins.js"></script>
         <script src="js/app.js"></script>

@@ -1,6 +1,13 @@
 // 
 // Basic grid
 // 
+.l-container {
+	width: 100%;
+	max-width: 80em;
+}
+
+
+
 .l-row {
 	display: flex;
 	flex-wrap: wrap;

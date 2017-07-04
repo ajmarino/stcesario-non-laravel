@@ -1,16 +1,13 @@
-<footer class="main-footer">
-	<div class="container">
-		<div class="social">
-			<p class="social__text">Connect with Us</p>
-			<nav class="nav nav--footer">
-				<a href="#" class="nav__link nav__link--facebook">Facebook</a>
-			</nav>
-		</div>
+<footer class="c-global-footer">
+    <div class="l-container">
+        <p class="social__text">Connect with us on <a href="#" class="c-global-footer__link">Facebook</a> </p>
 
-		<p class="legal">Copyright &copy; <?php echo Date("Y"); ?> St. Cesario Society. All Rights Reserved</p>
+        <p class="c-global-footer__text">
+            Copyright &copy; <?php echo Date("Y"); ?> St. Cesario Society. All Rights Reserved
 
-		<a href="humans.txt" class="main-footer__link" title="Made by Humans" rel="prettyPhoto">
-			<img src="/images/humanstxt-reg.png" alt="Made by humans">
-		</a>
-	</div>
+            <a href="humans.txt" class="c-global-footer__link" title="Made by Humans">
+                <img src="/images/humanstxt-reg.png" alt="Made by humans">
+            </a>
+        </p>
+    </div>
 </footer>

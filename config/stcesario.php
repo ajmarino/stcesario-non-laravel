@@ -1,11 +1,6 @@
 <?php
 
 
-
-
-/**
-*
-*/
 class Settings 
 {
 	
@@ -24,41 +19,13 @@ class Settings
 
 	public static function basePath($file = '')
 	{
-		return static::templatesPath() . "base/{$file}";
+		return require_once(dirname(__FILE__) . '/' . static::templatesPath() . "base/{$file}");
 	}	
 
 
 	public static function componentPath($file = '')
 	{
-		return static::templatesPath() . $file;
+		return require_once(dirname(__FILE__) . '/' . static::templatesPath() . $file);
 	}
 
 }
-	// /**
-	//  * Config Variables
-	//  */
-	// $env = $_SERVER['SERVER_NAME'];
-
-	
-	// $templates = "../templates/";
-	// $base      = $templates . "base/";
-	// $component = $templates . "components/";
-	// $content   = $templates . "components/content/";
-
-
-
-
-
-
-	/**
-	 * Helpful Debug Functions
-	 */
-	// function pp($data) {
-	// 	echo '<pre>';
-	// 	print_r($data);
-	// 	echo '</pre>';
-
-	// }
-	// function el($data, $label="Error Log") {
-	// 	error_log($label.' :'.print_r($data,1));
-	// }
