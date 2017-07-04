@@ -1,0 +1,26 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	AJ Marino - lead developer
+
+# THANKS
+
+	Theme based on Strano One Page Parallax - http://medialoot.com/item/strano-one-page-parallax-portfolio-html/
+
+
+# TECHNOLOGY COLOPHON
+
+	HTML5, CSS3
+	jQuery, Vue
+	Sass, Bourbon
+	Typecsset
+
+	Icons: FontAwesome & Iconic
+
+	Built with Laravel Mix
+
+	Asset Management with NPM
+
+	Lato, Montsarret fonts from Google Fonts, converted to web by Font Squirrel
