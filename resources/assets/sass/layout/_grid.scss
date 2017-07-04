@@ -1,0 +1,22 @@
+// 
+// Basic grid
+// 
+.l-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.l-column {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	
+
+	@for $i from 1 through 12 {
+		@include if-its('#{$i}') {
+			width: calc(100% * #{$i} / 12);
+		}
+	}
+}

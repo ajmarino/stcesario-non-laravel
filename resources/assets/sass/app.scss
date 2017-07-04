@@ -1,0 +1,100 @@
+@charset 'utf-8';
+// ===========================================================================================
+// Main Sass file
+// 
+// Table of Contents:
+// 
+//  01. Libraries / Plugins
+//  02. Base
+//  03. Layout
+//  04. Molecules
+//  05. Components
+//  06. Pages
+//  07. Misc
+// ===========================================================================================
+
+
+
+
+// ===========================================================================================
+// $Libraries / Plugins
+// 
+// External plugins added via yarn, .css copied to .scss so they can be included directly 
+// in the compiled css, or overwritten by a custom component file
+// ===========================================================================================
+@import
+    'node_modules/bourbon/app/assets/stylesheets/bourbon',            // css mixins, helpful tools
+    'node_modules/include-media/dist/include-media',                  // advanced media queries
+    'node_modules/normalize.css/normalize',                           // normalize.css
+    'node_modules/normalize-opentype.css/normalize-opentype.scss',    // allows fancy characters if supported
+    // 'font-awesome',                              // icon font
+    // 'sweetalert2',                               // facy alert popups
+    'helpers/helpers';                           // custom mixins / functions / variables
+
+
+
+
+
+// ===========================================================================================
+// $Base
+// 
+// Generic base classes and styles, used to apply mq debug label and set up typography for a 
+// base vertical grid system
+// ===========================================================================================
+@import
+    'base/boilerplate',                          // html5 boilerplate base css
+    'base/mq-info',                              // active media query label
+    'base/typecsset';                            // font sizing and vertical grid system
+
+
+
+
+
+// ===========================================================================================
+//  $Layout
+// ===========================================================================================
+@import
+    'layout/base',
+    'layout/grid';
+
+
+
+
+
+// ===========================================================================================
+// $Molecules
+// ===========================================================================================
+
+
+
+
+
+
+// ===========================================================================================
+// $Components
+// ===========================================================================================
+
+
+
+
+
+
+// ===========================================================================================
+// $Pages
+// ===========================================================================================
+
+
+
+
+
+
+// ===========================================================================================
+// $Misc
+// ===========================================================================================
+@import
+    'helpers/utility',                           // clearfix, screen-reading, debugging
+    'base/print',                                // basic resets for printing
+    'shame';                                     // shame file for hacks
+
+
+

@@ -1,0 +1,29 @@
+//
+// Creates label at top right of page with active media query text
+// 
+@if $show-mq {
+	.mq-info {
+		@include fixed(top 0 right 0);
+		background-color: #fcf8e3;
+		border-bottom: 1px solid #fbeed5;
+		border-left: 1px solid #fbeed5;
+		color: #c09853;
+		padding: 3px 6px;
+		z-index: z('debug');
+		font: small-caption;
+
+
+		&:after {
+			content: 'mobile: (max-width: 48em)';
+
+			// Loop through the breakpoints that should be shown
+			$show-breakpoints: ('tablet', 'laptop', 'desktop');
+			@each $bp in $show-breakpoints {
+				$width: inspect(map-get($breakpoints, $bp));
+				@include media('>=' + $bp) {
+					content: '#{$bp}: #{$width}';
+				}
+			}
+		}
+	}
+}
