@@ -18,18 +18,4 @@ mix.sass('resources/assets/sass/app.scss', 'public/css', {
         includePaths: ['node_modules']
     })
    .js('resources/assets/js/bootstrap.js', 'public/js/plugins.js')
-   .js('resources/assets/js/app.js', 'public/js')
-   .version();
-
-
-if (!mix.config.inProduction) {
-    mix.sourceMaps()
-       .browserSync({
-            proxy: '192.168.99.100'
-       });
-    
-    // sassdoc('./resources/assets/sass', {
-    //     verbose: true,
-    //     dest: './public/sassdocs'
-    // });
-}
+   .js('resources/assets/js/app.js', 'public/js');
