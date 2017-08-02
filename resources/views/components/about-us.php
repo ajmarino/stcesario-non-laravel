@@ -1,14 +1,14 @@
-<section id="about-us" class="section section--about-us">
-	<div class="section__intro">
-		<div class="section__title section__title--borders">
-			<h2 class="section__title__text">About St. Cesario Society</h2>
+<section id="about-us" class="c-section c-section--about-us">
+	<div class="c-section__intro">
+		<div class="c-section__header">
+			<h2 class="c-section__title">About St. Cesario Society</h2>
 		</div>
 
-		<p class="section__intro__text">Lorem ipsum dolor sit amet, <span class="highlight">consectetur adipisicing elit</span>. Cum adipisci praesentium exercitationem consequuntur rerum deserunt, tempore inventore <span class="highlight">sint nostrum itaque</span>, illo. Provident repellendus commodi sunt.</p>
+		<p class="c-section__text">Lorem ipsum dolor sit amet, <span class="highlight">consectetur adipisicing elit</span>. Cum adipisci praesentium exercitationem consequuntur rerum deserunt, tempore inventore <span class="highlight">sint nostrum itaque</span>, illo. Provident repellendus commodi sunt.</p>
 	</div>
 
-	<div class="section__content">
-		<div class="container">
+	<div class="c-section__content">
+		<div class="l-container">
 			<h3 class="section__sub-title">Here's what we do</h3>
 			<p class="section__tagline">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
 
