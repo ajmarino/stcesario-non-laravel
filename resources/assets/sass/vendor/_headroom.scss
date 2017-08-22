@@ -1,0 +1,16 @@
+//
+// Headroom.js
+//
+// Slides out header on scroll down,
+// Slides in header on scroll up
+//
+.headroom {
+    will-change: transform;
+    transition: transform .3s ease-in-out;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}

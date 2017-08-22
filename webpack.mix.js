@@ -18,4 +18,5 @@ mix.sass('resources/assets/sass/app.scss', 'public/css', {
         includePaths: ['node_modules']
     })
    .js('resources/assets/js/bootstrap.js', 'public/js/plugins.js')
-   .js('resources/assets/js/app.js', 'public/js');
+   .js('resources/assets/js/app.js', 'public/js')
+   .sourceMaps();

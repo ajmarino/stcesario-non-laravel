@@ -4,10 +4,12 @@
   "description": "St. Cesario Society of Netcong, NJ",
   "main": "app.js",
   "scripts": {
-    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "npm run development",
+    "development": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch-poll": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --watch-poll --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
     "hot": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
     "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {
@@ -21,16 +23,17 @@
   },
   "homepage": "https://github.com/ajmarino/stcesario.com#readme",
   "devDependencies": {
-    "bourbon": "^4.3.4",
-    "browser-sync": "^2.18.12",
-    "browser-sync-webpack-plugin": "^1.2.0",
-    "font-awesome": "^4.7.0",
+    "bootstrap": "^4.0.0-beta",
+    "flexboxgrid": "^6.3.1",
+    "headroom.js": "^0.9.4",
     "include-media": "^1.4.9",
     "jquery": "^3.2.1",
-    "laravel-mix": "^1.0.7",
+    "laravel-mix": "^1.4.2",
     "lodash": "^4.17.4",
     "normalize-opentype.css": "^0.2.4",
     "normalize.css": "^7.0.0",
-    "vue": "^2.3.4"
+    "tachyons": "^4.8.1",
+    "tachyons-flexbox": "^2.0.5",
+    "vue": "^2.4.2"
   }
 }

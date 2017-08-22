@@ -28,7 +28,7 @@ window.Tracking = require('./utilities/Tracking');
 window._ = require('lodash');
 window.$ = window.jQuery = require('jquery');
 // require('bootstrap-sass');
-
+window.Headroom = require('headroom.js');
 
 window.Vue = require('vue');
 // require('vue-resource');

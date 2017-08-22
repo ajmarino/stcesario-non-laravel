@@ -1,7 +1,15 @@
 const app = new Vue({
-    el: 'main',
+    el: document.getElementById('site'),
 
     data: {
+        headroom: null,
+        headroomOptions: {
+            offset: 100
+        }
+    },
+
+
+    beforeMount() {
 
     },
 
@@ -16,12 +24,16 @@ const app = new Vue({
 		});
 
 
-        
+        this.headroom = new Headroom(this.$refs.header, this.headroomOptions);
+        this.headroom.init();
     },
 
 
     methods: {
 
+        slideTo(e) {
+            Util.slidePageTo( e.target.hash );
+        }
     }
 });
 
