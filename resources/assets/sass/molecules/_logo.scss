@@ -1,0 +1,10 @@
+//
+// Main logo
+//
+.logo {
+    color: darken(c('it-red'), 15%);
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-shadow: 1px 1px 0 $c-white,
+                 3px 3px 0 #{darken(c('it-green'), 15%)};
+}

@@ -9,46 +9,31 @@
 // "Lobotomized Owl selector"
 // http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
 //
-* + * {
-    margin-top: 1.5em;
-}
+// * + * {
+//     margin-top: 1.5em;
+// }
 
 
 body {
-	@include fluid-prop(font-size padding-top, 16px, 20px);
-
+	// @include fluid-prop(font-size padding-top, 16px, 20px);
 }
 
 
-// BEM Helpers example
-// @include new('menu', 'object') {
-// 	color: $c-greenblue;
 
-// 	@include if-its('open') {
-// 		color: $c-leatherjacket;
-// 	}
+.ff-quattro { @include ff('Quattro'); }
+.ff-oswald { @include ff('Oswald'); }
+.ff-lato { @include ff('Lato'); }
+.ff-fjalla { @include ff('Fjalla'); }
+.ff-average { @include ff('Average'); }
 
-// 	@include when('shrink') {
-// 		color: $c-sasquatchsocks;
 
-// 		@include if-its('open') {
-// 			color: $c-grannysmithapple;
-// 		}
-// 	}
+.dark-red    { color: darken(c('it-red'), 15%); }
+.bd-dark-red { border-color: darken(c('it-red'), 15%); }
+.bg-dark-red { background-color: darken(c('it-red'), 15%); }
 
-// 	@include has('title') {
-// 		color: $c-outrageousorange;
 
-// 		@include when('alt') {
-// 			color: $c-timberwolf;
-// 		}
 
-// 		@include when-inside('.sidebar') {
-// 			color: $c-vividviolet;
+.min-h-45 { min-height: 45em; }
 
-// 			@include when('alt') {
-// 				color: $c-tealblue;
-// 			}
-// 		}
-// 	}
-// }
+
+.bg-fixed { background-attachment: fixed; }

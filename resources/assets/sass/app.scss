@@ -1,9 +1,9 @@
 @charset 'utf-8';
 // ===========================================================================================
 // Main Sass file
-// 
+//
 // Table of Contents:
-// 
+//
 //  01. Libraries / Plugins
 //  02. Base
 //  03. Layout
@@ -18,15 +18,17 @@
 
 // ===========================================================================================
 // $Libraries / Plugins
-// 
-// External plugins added via yarn, .css copied to .scss so they can be included directly 
+//
+// External plugins added via yarn, .css copied to .scss so they can be included directly
 // in the compiled css, or overwritten by a custom component file
 // ===========================================================================================
 @import
-    'node_modules/bourbon/app/assets/stylesheets/bourbon',            // css mixins, helpful tools
-    'node_modules/include-media/dist/include-media',                  // advanced media queries
-    'node_modules/normalize.css/normalize',                           // normalize.css
-    'node_modules/normalize-opentype.css/normalize-opentype.scss',    // allows fancy characters if supported
+    // 'bourbon/app/assets/stylesheets/bourbon',            // css mixins, helpful tools
+    'include-media/dist/include-media',                  // advanced media queries
+    // 'normalize.css/normalize',                           // normalize.css
+    '../../../node_modules/tachyons/css/tachyons.css',
+    '../../../node_modules/tachyons-flexbox/css/tachyons-flexbox.css',
+    'normalize-opentype.css/normalize-opentype.scss',    // allows fancy characters if supported
     // 'font-awesome',                              // icon font
     // 'sweetalert2',                               // facy alert popups
     'helpers/helpers';                           // custom mixins / functions / variables
@@ -37,8 +39,8 @@
 
 // ===========================================================================================
 // $Base
-// 
-// Generic base classes and styles, used to apply mq debug label and set up typography for a 
+//
+// Generic base classes and styles, used to apply mq debug label and set up typography for a
 // base vertical grid system
 // ===========================================================================================
 @import
@@ -64,7 +66,8 @@
 // ===========================================================================================
 // $Molecules
 // ===========================================================================================
-
+@import
+    'molecules/logo';
 
 
 
@@ -80,9 +83,10 @@
 
 
 // ===========================================================================================
-// $Pages
+// $Vendor
 // ===========================================================================================
-
+@import
+    'vendor/headroom';
 
 
 
