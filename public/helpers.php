@@ -11,3 +11,5 @@ function pp($data) {
 function el($data, $label="Error Log") {
     error_log($label.' :'.print_r($data,1));
 }
+
+

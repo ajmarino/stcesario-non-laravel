@@ -38,19 +38,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <link rel="stylesheet" href="css/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Average|Fjalla+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/app.css?v=<?php echo strtotime('now') ?>">
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
 
-        <div id="site">
+
+        <div id="site" class="ff-lato">
             <?php $settings->componentPath('global/header.php'); ?>
+            <a id="top" hidden></a>
 
             <main role="main">
-                
+
                 <?php foreach ($components as $template) {
                     $settings->componentPath("components/{$template}");
                 } ?>
@@ -62,7 +67,7 @@
 
 
         <script src="js/plugins.js"></script>
-        <script src="js/app.js"></script>
+        <script src="js/app.js?v=<?php echo strtotime('now') ?>"></script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
