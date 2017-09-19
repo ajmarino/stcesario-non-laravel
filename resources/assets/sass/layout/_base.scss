@@ -5,20 +5,8 @@
 }
 
 
-//
-// "Lobotomized Owl selector"
-// http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
-//
-// * + * {
-//     margin-top: 1.5em;
-// }
 
-
-body {
-	// @include fluid-prop(font-size padding-top, 16px, 20px);
-}
-
-
+.bg-fixed { background-attachment: fixed; }
 
 
 .ff-quattro { @include ff('Quattro'); }
@@ -32,12 +20,16 @@ body {
 .bd-dark-red { border-color: darken(c('it-red'), 15%); }
 .bg-dark-red { background-color: darken(c('it-red'), 15%); }
 
+.darkest-red { color: darken(c('it-red'), 15%); }
 
 .shadow-special { text-shadow: 1px 1px 0 $c-white,
                                3px 3px 0 #{darken(c('it-green'), 15%)}; }
 
 
-.min-h-45 { min-height: 45em; }
+.min-h-45 { min-height: 45rem; }
+.max-h-40 { max-height: 40rem; }
 
 
-.bg-fixed { background-attachment: fixed; }
+.ls-05 { letter-spacing: .05em; }
+
+
