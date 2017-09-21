@@ -8,7 +8,7 @@
     </div>
 
     <div class="bg-light-gray">
-        <div class="mw8 center pa4 tc">
+        <div class="mw8 center ph4 pv5 tc">
             <h3 class="f3 lh-copy mb0">Here's what we do</h3>
             <p class="ff-oswald f2 lh-copy ttu">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
 

@@ -7,12 +7,13 @@
 
 
 .bg-fixed { background-attachment: fixed; }
+.bg-no-repeat { background-repeat: no-repeat; }
 
 
 .ff-quattro { @include ff('Quattro'); }
-.ff-oswald { @include ff('Oswald'); }
-.ff-lato { @include ff('Lato'); }
-.ff-fjalla { @include ff('Fjalla'); }
+.ff-oswald  { @include ff('Oswald'); }
+.ff-lato    { @include ff('Lato'); }
+.ff-fjalla  { @include ff('Fjalla'); }
 .ff-average { @include ff('Average'); }
 
 
