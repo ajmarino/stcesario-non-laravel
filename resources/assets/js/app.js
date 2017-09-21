@@ -26,6 +26,12 @@ const app = new Vue({
 
         this.headroom = new Headroom(this.$refs.header, this.headroomOptions);
         this.headroom.init();
+
+
+
+        $(this.$refs.parallax1).parallax("50%", .5);
+        $(this.$refs.parallax2).parallax("50%", .5);
+        $(this.$refs.parallax3).parallax("50%", .5);
     },
 
 
