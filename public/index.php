@@ -67,6 +67,7 @@
 
 
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/jquery.parallax-1.1.3.js"></script>
         <script src="js/app.js?v=<?php echo strtotime('now') ?>"></script>
 
 
