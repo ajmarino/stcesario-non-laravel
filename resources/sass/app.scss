@@ -1,0 +1,26 @@
+@import 'include-media';
+
+$breakpoints: (
+    'sm'   : 30em,   // 480px  - Mobile Landscape
+    'md'   : 48em,   // 768px  - Tablet
+    'lg'   : 62em,   // 992px  - Laptop
+    'xl'   : 80em,   // 1200px - Desktop
+);
+
+
+@tailwind preflight;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    transition: max-width 0.3s ease-in-out;
+}
+
+
+
+
+@tailwind utilities;
