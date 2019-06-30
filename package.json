@@ -1,43 +1,41 @@
 {
-  "name": "stcesario.com",
+  "name": "stcesario",
   "version": "0.0.0",
   "description": "St. Cesario Society of Netcong, NJ",
   "main": "app.js",
   "scripts": {
     "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "development": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "npm run development -- --watch",
     "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ajmarino/stcesario.com.git"
+    "url": "git+https://github.com/ajmarino/stcesario.git"
   },
   "author": "AJ Marino",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ajmarino/stcesario.com/issues"
+    "url": "https://github.com/ajmarino/stcesario/issues"
   },
-  "homepage": "https://github.com/ajmarino/stcesario.com#readme",
+  "homepage": "https://github.com/ajmarino/stcesario#readme",
   "devDependencies": {
-    "cross-env": "^5.2",
     "css-mqpacker": "^7.0.0",
     "include-media": "^1.4.9",
-    "laravel-mix": "^4.0.15",
+    "laravel-mix": "^4.0.16",
     "laravel-mix-purgecss": "^4.1.0",
     "laravel-mix-tailwind": "^0.1.0",
     "lodash": "^4.17.11",
-    "popper.js": "^1.14.7",
-    "resolve-url-loader": "^3.0.1",
-    "sass": "^1.17.3",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.22.1",
     "sass-loader": "^7.1.0",
-    "tailwindcss": "^1.0.0-beta.3",
+    "tailwindcss": "^1.0.4",
     "vue": "^2.6.10",
     "vue-headful": "^2.0.1",
-    "vue-router": "^3.0.2",
+    "vue-router": "^3.0.6",
     "vue-template-compiler": "^2.6.10"
   }
 }
