@@ -24,10 +24,10 @@
 
         <div id="app" class="ff-lato">
             <a id="top" hidden></a>
-            <global-header :links="routes"></global-header>
+            <global-header></global-header>
 
-            <main role="main">
-
+            <main>
+                <router-view></router-view>
             </main>
 
             <global-footer year="<?php echo date('Y', strtotime('now')) ?>"></global-footer>

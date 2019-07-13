@@ -1,11 +1,15 @@
 module.exports = {
-  theme: {
-    // Some useful comment
-  },
-  variants: {
-    // Some useful comment
-  },
-  plugins: [
-    // Some useful comment
-  ]
+    theme: {
+        extend: {
+            colors: {
+                'black70': 'rgba(0, 0, 0, .7)',
+            }
+        }
+    },
+    variants: {
+        // Some useful comment
+    },
+    plugins: [
+        // Some useful comment
+    ]
 }

@@ -1,4 +1,4 @@
-@import 'include-media';
+@import './node_modules/include-media/dist/include-media';
 
 $breakpoints: (
     'sm'   : 30em,   // 480px  - Mobile Landscape
@@ -8,7 +8,7 @@ $breakpoints: (
 );
 
 
-@tailwind preflight;
+@tailwind base;
 
 *,
 *::before,
