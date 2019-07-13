@@ -26,5 +26,11 @@ const app = new Vue({
 
     mounted() {
         console.info('App started.');
+    },
+
+    methods: {
+        gotoSection(section) {
+
+        }
     }
 });

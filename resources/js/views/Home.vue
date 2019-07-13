@@ -1,11 +1,21 @@
 <template>
-    <div class="pt-6 md:px-6">
+    <div class="">
         <vue-headful
-            title="Home Page"
-            description="Description from vue-headful"
+            title="St. Cesario Society"
+            description="Come join us July 20th, 2019 for our annual feast."
         />
 
-        <h1>Home</h1>
+        <parallax bg="/images/walking-up-the-street.jpg"
+            title="St. Cesario Society"
+            text="July 20, 2019"
+        />
+
+        <about />
+
+        <parallax bg="/images/cesa-church.jpg"
+            title="St. Cesario Society"
+            text="July 20, 2019"
+        />
     </div>
 </template>
 
